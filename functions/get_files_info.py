@@ -53,7 +53,7 @@ def get_file_content(working_directory, file_path):
         
         return file_content_string
         
-    except OSError as e:
+    except OSError as e: # only catch anticipated exceptions 
         return f"Error: {str(e)}"
     
 
